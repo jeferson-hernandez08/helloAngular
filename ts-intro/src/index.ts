@@ -1,21 +1,11 @@
 /*
     ===== Código de TypeScript =====
+    ===== Aquí se Compila Cada Ejercicio ======¿
 */
 
-let habilidades: string[] = ["Bash", "Counter", "Healing"];
-
-//habilidades.push(true);
+/*======= Decoradores de Clases =======*/
 
 
-
-
-
-
-
-
-/*
-  min 5    
-*/
 
 
 

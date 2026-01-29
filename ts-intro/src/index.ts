@@ -3,8 +3,12 @@
     ===== Aquí se Compila Cada Ejercicio ======¿
 */
 
-/*======= Decoradores de Clases =======*/
+/*======= Encadenamiento Opcional =======*/
 
+let saludo: string;
+saludo = "Holaaaaa"
+
+console.log(saludo);
 
 
 

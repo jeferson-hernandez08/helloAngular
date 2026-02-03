@@ -16,4 +16,4 @@ import { SidebarComponent } from './sidebar/sidebar.component';
   ]
 })
 
-export class SharedModule { }     // QUEDE AQUI | COMMIT EN CASA ❤
+export class SharedModule { }     

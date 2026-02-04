@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GifsService } from 'src/app/gifs/services/gifs.service';     // Importamos el GifsService
+import { GifsService } from 'src/app/gifs/services/gifs.service';     // 👈🏼 Importamos el GifsService
 
 @Component({
   selector: 'app-sidebar',
@@ -16,12 +16,10 @@ export class SidebarComponent {
 
   }
 
-  buscar( termino: string) {
-    console.log(termino);
+  buscar( termino: string) {  
+    //console.log(termino);
+    this.gifsService.buscarGifs( termino );
   }
 
-
-
-  
 
 }

@@ -6,19 +6,20 @@ import { Country } from '../../interfaces/pais.interface';
   selector: 'app-por-pais',
   templateUrl: './por-pais.component.html'
 })
+
 export class PorPaisComponent  {
 
   termino : string = "";
   hayError: boolean = false;
-  paises  : Country[] = [];
+  paises  : Country[] = [];           //  Interface: Plantilla de todos los datos ya tipados que debemos de usar de la API.
 
-  constructor( private paisService: PaisService ) { }    // Inyeccion: Usar el archivo pais.service
+  constructor( private paisService: PaisService ) { }    // Inyeccion: Usar el archivo pais.service o traernos el pais.service 
+  buscar( termino: string ) {
 
-  buscar() {
     this.hayError = false;  
-    console.log(this.termino);
+    this.termino = termino;
 
-    this.paisService.buscarPais( this.termino )
+    this.paisService.buscarPais( termino )
       .subscribe( (paises) => {
         console.log(paises); 
         this.paises = paises;
@@ -31,6 +32,16 @@ export class PorPaisComponent  {
       });
 
   } 
+
+  sugerencias( termino: string ) {
+    this.hayError = false;
+    // TODO: crear sugerecias
+
+  }
+
+  
+
+  
 
 
 }

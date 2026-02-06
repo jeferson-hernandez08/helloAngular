@@ -5,27 +5,29 @@ import { Component } from '@angular/core';
   templateUrl: './por-region.component.html',
   styles: [`
     button {
-      margin-rigth: 5px;
+      margin-right: 5px;
     }
-    
     
     `
   ]
 })
 export class PorRegionComponent {
 
-  regiones: string[] = ["africa", "americas", "asia", "europe", "oceania"];
+  regiones: string[] = ["EU", "EFTA", "CARICOM", "PA", "AU", "USAN", "EEU", "AL", "ASEAN", "CAIS", "CEFTA", "NAFTA", "SAARC"];
   regionActiva: string = "";
 
   constructor() { }
 
+  getClaseCSS( region: string ): string {
+    return (region === this.regionActiva) ? 'btn btn-primary': 'btn btn-outline-primary';
+  }
+
   activarRegion( region: string ) {
     this.regionActiva = region;
 
-    // TODO: Cargar o hacer el llamado al servicio 
+    // TODO: Cargar o hacer el llamado al servicio ----- ULTIMO COMMIT HOME
 
   }
 
-  
 
 }

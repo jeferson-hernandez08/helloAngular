@@ -28,7 +28,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forChild( routes )       // COMMIT DESDE CASA AQUI MIN 5:00 --- Commit 
+    RouterModule.forChild( routes )       
   ],
   exports: [
     RouterModule
